@@ -1,0 +1,282 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 auto;
+}
+
+.img_cloth{
+    height: 100%;
+    padding: 15px;
+}
+.img_svg{
+    width: 15px;
+}
+.box_cloth{
+    width: 364px;
+    margin: 20px auto;
+    background-color: black;
+    border: 2px solid gray;
+    position: relative;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+.box_white{
+    width: 360px;
+    height: 199px;
+    background-color: #fff;
+    text-align: center;
+}
+h1{
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.4px;
+    text-align: left;
+    color: #fff;
+    padding: 30px 30px 11px;
+    margin-bottom: 11px;
+}
+h2{
+    font-family: Gilroy;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.8px;
+    text-align: center;
+}
+h6{
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.15px;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: rgba(255, 255, 255, 0.56);
+    margin-bottom: 16px;
+}
+.cost{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    align-items: center;
+    padding-left: 30px;
+    margin-bottom: 100px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    padding-left: 10px;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+}
+.btn_cloth{
+    border: 1px solid rgba(0, 0, 0, 1);
+    width: 305px;
+    height: 55px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+
+}
+.btn_one{
+    width: 254px;
+    height: 55px;
+    gap: 0px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+.btn_vse{
+    width: 254px;
+    height: 55px;
+    gap: 0px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    cursor: pointer;
+
+}
+.btn_menu{
+    width: 254px;
+    height: 55px;
+    gap: 0px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    cursor: pointer;
+
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 8px;
+
+    img {
+        width: 80px;
+       
+    }
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.product-name {
+    position: relative;
+    top: -30px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    right: 110px;
+    gap: 10px;  
+}
+
+.quantity button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quantity div {
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    top: -24px;
+    left: 45px;
+}
+
+.remove-btn {
+    background-color: #ccc;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    top: 19px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 500px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.modal.open {
+    right: 0;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.modal-body {
+    margin-top: 20px;
+    height: 100%;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 50px;
+} 
+
+.active-btn {
+    background: #1F86FF;
+    color: white;
+}
+
+
+.btn_plus {
+font-weight: bold;
+}
+
+.btn_minus {
+    font-weight: bold;
+}
+
+#cartIdDisplay {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    overflow-y: scroll;
+    height: 70%;
+}
+
+.total {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.oform {
+
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+
+

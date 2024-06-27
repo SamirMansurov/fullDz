@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+<body>
+    <center>
+        <h2>В карзине: <span id="total_view" >0</span> товар</h2>
+        <button class="btn_one"><b>Показать первые: 5</b></button>
+        <button class="btn_vse"><b>Показать все</b></button>
+        <button class="btn_menu"><b>Menu</b></button>
+    </center>
+    <div class="container"></div>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-header">
+            <h2>Товары</h2>
+            <span id="closeModalBtn" class="close-btn">&times;</span>
+        </div>
+        <hr>
+        <div class="modal-body">
+            <div id="cartIdDisplay"></div>
+            <div class="total">
+                <p>Общая цена</p>
+                <p>0,00$</p>
+            </div>
+            <div class="oform">
+                <p>Офомить</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./lib/db.js"></script>
+    <script src="./lib/utils.js"></script>
+    <script src="./components/Product.js"></script>
+    <script src="./components/CartItem.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
